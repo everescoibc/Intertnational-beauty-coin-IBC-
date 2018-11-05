@@ -1,0 +1,56 @@
+<?php include "../include/dbonline.php";?>
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--타이틀-->
+<link rel="icon" href="../../img/everesco-com-tlogo04.png">
+<title>EVERESCO Community</title>
+<!--CSS&font&icon-->
+<link rel="stylesheet" href="../../styles/sign-st-def.css">
+<link rel="stylesheet" href="../../styles/sign-st-mo.css">
+<link rel="stylesheet" href="../../styles/sign-st-ta.css">
+<link rel="stylesheet" href="../../styles/sign-st-pc.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--Jquery&script-->
+<script src="../../script/jquery-3.3.1.min.js"></script>
+<script src="../../script/jquery-ui.js"></script>
+</head>
+
+<body>
+	
+	<div class="container">
+		<!-- 로그인 이미지 -->
+		<center><div class="sign-logo"><a href="../story/index.php"><img src="../../img/everesco-logo01.png"></a></div></center>
+		<!-- 비밀번호 재설정 -->
+		<div id="sign-in">
+			<div class="sign-container">
+				<form action="sign-ac/resetpw-ac.php" method="post">
+					<div>
+						<h1>비밀번호 재설정</h1>
+					</div>
+					<div>
+						<h2>계정 이메일 주소를 입력하시면 비밀번호를 재설정하는 안내 메일이 발송됩니다.</h2>
+					</div>
+					<div>
+						<p><b>이메일</b></p>
+						<input name="email" id="email" type="email" placeholder="이메일 주소를 입력하세요." maxlength="30" required>
+					</div>
+					<div>
+						<button class="bt-sign" type="submit">재설정 메일 보내기</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- 로그인 -->
+		<div class="sign">
+			이미 안내 메일을 요청 하셨나요? <a href="sign-in.php">로그인</a>
+		</div>
+	</div>
+	
+</body>
+	
+</html>
