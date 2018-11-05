@@ -15,5 +15,5 @@
 	//sql 명령 실행
 	$sql = mq("INSERT INTO orderibc(email,username,payment,eth,ibc,datetime,wallet,process) VALUES('".$_SESSION['email']."','".$_SESSION['username']."','".$payment."','".$eth."','".$ibc."','".$datetime."','".$_SESSION['wallet']."','".$process."')");
 ?>
-<script type="text/javascript">alert("IBC已收到购买申请。您的付款地址将通过电子邮件发送。请检查仪表板上的IBC购买进度。"); location.href='../cn/main.php';</script>
+<script type="text/javascript">alert("IBC order has been applied. Your payment address will be sent by email. Please check your dashboard for IBC order progress."); location.href='../en/main.php';</script>
 </html>

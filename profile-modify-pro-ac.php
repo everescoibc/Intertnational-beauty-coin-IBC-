@@ -41,20 +41,20 @@
 			//수정 세션 생성
 			$_SESSION['modify'] = 1;
 			if(isset($_SESSION['email'])){
-				header("Location: ../cn/profile-modify.php");
+				header("Location: ../en/profile-modify.php");
 			}
 			else{
-				echo "<script>alert('세션 생성 실패'); location.href='../cn/profile.php';</script>";
+				echo "<script>alert('세션 생성 실패'); location.href='../en/profile.php';</script>";
 			}
 		}
 		//아닐 경우
 		else{
-			echo "<script>alert('邮箱与密码不一致。'); location.href='../cn/profile.php';</script>";
+			echo "<script>alert('Email and password do not match.'); location.href='../en/profile.php';</script>";
 		}
 	}
 	//아닐 경우
 	else{
-		echo "<script>alert('没有登录的邮箱。'); location.href='../cn/sign-in.php';</script>";
+		echo "<script>alert('Unregistered email.'); location.href='../en/sign-in.php';</script>";
 	}
 ?>
 </html>

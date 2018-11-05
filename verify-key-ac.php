@@ -14,14 +14,14 @@
 
 	//키 존재할 경우
 	if($res01->num_rows == 1){
-		$sql = mq("UPDATE user SET confirm='1' WHERE keyem='{$keyem}'");
+		$sql = mq("UPDATE user set confirm='1' WHERE keyem='{$keyem}'");
 		
 		$user = $res01->fetch_array();
 		$_SESSION['confirm'] = 1;
 	}
 	else{
-		echo "<script>alert('没有认证。'); location.href='../cn/sign-in.php';</script>";
+		echo "<script>alert('허용되지 않은 키 값입니다.'); location.href='../en/sign-in.php';</script>";
 	}
 ?>
-<script type="text/javascript">alert("您的电子邮件已经过验证。"); location.href='../cn/main.php';</script>
+<script type="text/javascript">alert("Email verification is complete."); location.href='../en/main.php';</script>
 </html>

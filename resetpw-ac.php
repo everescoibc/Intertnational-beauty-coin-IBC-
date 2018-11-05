@@ -28,7 +28,7 @@ function generateRandomString($length = 10) {
 		
 		//랜덤 문자열 생성후 등록
 		$resetpw = generateRandomString(20);
-		$sql = mq("UPDATE user SET keypw='".$resetpw."' WHERE email='{$email}'");
+		$sql = mq("UPDATE user set keypw='".$resetpw."' WHERE email='{$email}'");
 
 		require_once("../../library/phpmailer/class.phpmailer.php");
 		$mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
@@ -47,18 +47,18 @@ function generateRandomString($length = 10) {
 			$mail->IsHTML(true);
 			$mail->SetFrom('contact@everesco.kr', 'EVERESCO'); // 보내는 사람 email 주소와 표시될 이름 (표시될 이름은 생략가능)
     		$mail->AddAddress($email); // 받을 사람 email 주소와 표시될 이름 (표시될 이름은 생략가능)
-    		$mail->Subject = '[EVERESCO] 密码更改指南。'; // 메일 제목
+    		$mail->Subject = '[EVERESCO] Please reset your password.'; // 메일 제목
     		$mail->Body = 
-				'<h3 style="color: black;">点击下面的链接进行密码重置。</h3>
+				'<h3 style="color: black;">Click the link to change your password.</h3>
 				<a href="http://everesco.org/dashboard/action-kr/resetpw-key-ac.php?keypw='.$resetpw.'">
 				http://everesco.org/dashboard/action-kr/resetpw-key-ac.php?keypw='
 				.$resetpw.'</a>
-				<br><br><h3>谢谢。</h3>'
+				<br><br><h3>Thank you.</h3>'
 				;
 			
     		$mail->Send();
 			
-			echo "<script>alert('请检查您的电子邮件并更改密码。'); location.href='../cn/sign-in.php';</script>";
+			echo "<script>alert('Please check your email and change your password.'); location.href='../en/sign-in.php';</script>";
 
 		} catch (phpmailerException $e) {
     		echo $e->errorMessage(); //Pretty error messages from PHPMailer
@@ -68,7 +68,7 @@ function generateRandomString($length = 10) {
 	}
 	//일치하지 않을 경우
 	else {
-		echo "<script>alert('此邮箱未注册。'); location.href='../cn/resetpw.php';</script>";
+		echo "<script>alert('Unregistered email.'); location.href='../en/resetpw.php';</script>";
 	}
 ?>
 </html>

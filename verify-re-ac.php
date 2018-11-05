@@ -38,11 +38,11 @@
 		$mail->IsHTML(true);
 		$mail->SetFrom('contact@everesco.kr', 'EVERESCO'); // 보내는 사람 email 주소와 표시될 이름 (표시될 이름은 생략가능)
     	$mail->AddAddress($_SESSION['email']); // 받을 사람 email 주소와 표시될 이름 (표시될 이름은 생략가능)
-    	$mail->Subject = '[EVERESCO] 请验证您的电子邮件。'; // 메일 제목
+    	$mail->Subject = '[EVERESCO] Please verify your email address.'; // 메일 제목
     	$mail->Body = 
-			'<h3 style="color: black;">你好 '.$_SESSION['username'].'。我们是EVERESCO公司。<br>请点击以下链接验证您的电子邮件。</h3>
+			'<h3 style="color: black;">Hello '.$_SESSION['username'].'. We are EVERESCO.<br>Click the link to complete your email verification.</h3>
 			<a href="http://everesco.org/dashboard/action-kr/verify-key-ac.php?keyem='.$keyem.'">http://everesco.org/dashboard/action-kr/verify-key-ac.php?keyem='.$keyem.'</a>
-			<br><br><h3>谢谢。</h3>'
+			<br><br><h3>Thank you.</h3>'
 			;
 			
     	$mail->Send();
@@ -53,5 +53,5 @@
     echo $e->getMessage(); //Boring error messages from anything else!
 	}
 ?>
-<script type="text/javascript">alert("验证电子邮件已发送。请验证您的电子邮件并完成验证。"); location.href='../cn/main.php';</script>
+<script type="text/javascript">alert("Verification email resent. Please verify your email address."); location.href='../en/main.php';</script>
 </html>

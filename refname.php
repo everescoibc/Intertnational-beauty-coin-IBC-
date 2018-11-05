@@ -8,14 +8,14 @@
 	if($res01->num_rows == 1){
 		$refuser = $res01->fetch_array();
 		$refusername = $refuser['username'];
-		echo "<h3 class='refname'>搜索的推荐人: {$refusername}</h3>";
+		echo "<h3 class='refname'>Searched username: {$refusername}</h3>";
 	}
 	else{
 		$refusername = '없음';
-		echo "<h3 class='refnameno'>无搜索的推荐人。</h3>";
+		echo "<h3 class='refnameno'>Not searched.</h3>";
 	}
 	if($refusername == FALSE){
 		$refusername = '없음';
-		echo "<h3 class='refnameno'>无搜索的推荐人。</h3>";
+		echo "<h3 class='refnameno'>Not searched.</h3>";
 	}
 ?>

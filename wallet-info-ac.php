@@ -9,5 +9,5 @@
 	$sql = mq("UPDATE user SET wallet='".$_POST['wallet']."' WHERE email='".$_SESSION['email']."'");
 
 ?>
-<script type="text/javascript">alert("你做完了"); location.href='../cn/wallet.php';</script>
+<script type="text/javascript">alert("Complete."); location.href='../en/wallet.php';</script>
 </html>

@@ -22,8 +22,8 @@
 		
 		//일치하지 않을 경우
 		else{
-			echo "<script>alert('密码不一致。'); location.href='../cn/profile.php';</script>";
+			echo "<script>alert('Passwords do not match.'); location.href='../en/profile.php';</script>";
 		}
 ?>
-<script type="text/javascript">alert("修改成功。"); location.href='../cn/profile.php';</script>
+<script type="text/javascript">alert("Complete."); location.href='../en/profile.php';</script>
 </html>
