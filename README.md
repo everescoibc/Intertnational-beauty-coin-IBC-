@@ -1,1 +1,1 @@
-# EverescoIBC
+# International beauty token
