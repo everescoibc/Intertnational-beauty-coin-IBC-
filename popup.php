@@ -1,18 +1,18 @@
 <div id="popup-event">
-	<h1>[EVERESCO IBC币特别活动]</h1>
-	<p>IBC财团将于10月20日举行第30届人类美容奥林匹克大会，分别来自28个国家的美容业人士参与活动。为了纪念美容奥林匹克会员国一致同意将IBC币作为活动的参与费，EVERESCO推出限时限量预售活动，活动期限9月5日前，限额10,000,000枚IBC币)。</p>
-	<h1>--- 活动中奖名单 ---</h1>
-	<h1>第一名 现金 500万韩币(1名)</h1> 
+	<h1>[EVERESCO IBC Token Special Event Closed]</h1>
+	<p>Special events will be held to celebrate the participation of 28 countries around the world in hosting the 30th Human Beauty Olympiad on October 30th. IBC has unanimously decided to use it as an entrance fee for the Human Beauty Olympics in IHU. The 10 million owned by the IBC Foundation will be sold by September 11th. Events can be closed early if all of the Foundation's holdings are sold.</p>
+	<h1>--- Event Winners Announced ---</h1>
+	<h1>1st cash 500,000 won (1 person)</h1> 
 	<p style="text-align: center;">박*상    aaa92299***@gmail.com
 	<br><br></p>
-	<h1>第二名 酒店使用券(5名)</h1> 
+	<h1>2nd Hotel Pass (5 people)</h1> 
     <p style="text-align: center;">김*향       171138***@qq.com
     <br>강*진       akdr***@qq.com 
     <br>Sun*       akdr***@naver.com
     <br>유*순       bb***@hanmail.net
     <br>성*한       geto1***@qq.com
 	<br><br></p>
-	<h1>第三名 进口高级厨房用品(20名)</h1> 
+	<h1>Imported kitchen appliances (20 people)</h1> 
     <p style="text-align: center;">김*철       c**@famzic.com
     <br>박*진       rkle***@naver.com
     <br>진*숙       sigma***@qq.com
@@ -34,7 +34,7 @@
     <br>rohsae*    ppan***@naver.com
     <br>성*모       sjjwa***@naver.com
 	<br><br></p>
-	<p style="text-align: right;">(关闭窗口，请点击这里)</p>
+	<p style="text-align: right;">(Please click to close this window.)</p>
 </div>
 <script>
 	$(document).ready(function(){
